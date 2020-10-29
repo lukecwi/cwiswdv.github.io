@@ -1,0 +1,107 @@
+/* Luke Chulack 10/29/2020 */
+
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('../fonts/firasans/firasans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/firasans/firasans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    
+    font-size: 1em;
+    font-family: Arial, "Times New Roman", serif;
+    background-image: url("../image/abstractPic.jpg");
+    
+}
+
+h1 {
+    
+    font-size: 2em;
+    font-family: fira_sansregular, "Times New Roman", serif;
+}
+
+h3 {
+    
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    
+}
+
+.fonts {
+    
+    color: orange;
+    font-size:  1.5em;
+    font-family: 'Comic Sans MS', "Times New Roman", serif;
+
+}
+
+.colors {
+    
+    color: red;
+    font-weight: bold;
+    
+}
+
+.more {
+    
+    color: blue;
+    text-decoration: underline;
+    border: 1px dashed gray;
+    background-color: #D69BBE;   
+}
+
+.backgrounds {
+    
+    color: green;
+    font-family: Trebuchet MS;
+    font-size:  1.25em;
+}
+article {
+    
+    margin-left: 175px;
+    background-color: white;
+    padding: 10px;
+    
+}
+
+article ul {
+    
+    list-style-image: url("../image/peaceSign.png");
+    
+}
+
+#outerwrapper {
+    
+    width: 650px;
+    background-color: #E7DBF6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+head {
+    
+    background-color: #4892e5;
+    color: white;
+    padding: 10px;
+    
+}
+
+
+nav {
+    
+    width: 175px;
+    background-color: #E7DBF6;
+    float: left;
+    
+}
+
+footer {
+    
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
