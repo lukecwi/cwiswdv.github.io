@@ -1,0 +1,81 @@
+/* Luke Chulack 10/30/2020 */
+
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('../fonts/quicksand/quicksand-italic-webfont.woff2') format('woff2'),
+         url('../fonts/quicksand/quicksand-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    
+    background-color: #B8D1EB;
+    color: #000000;
+    font-family: Times New Roman, Times, serif;
+    
+
+}
+
+#outerwrapper {
+
+	margin-left: auto;
+	margin-right: auto;
+    width: 70%;
+    
+} 
+
+header h1 {
+    
+    font-family: 'Righteous', cursive, sans-serif;
+
+    
+}
+
+header h2 {
+    
+    font-family: quicksand, cursive, sans-serif;
+    
+}
+main {
+    
+    background-color: #C5A98B;
+   
+}
+
+main ul {
+    
+    list-style-image: url("../images/tomato.png");
+    
+}
+
+
+.floatleft { 
+    float: left;
+    margin-right: 3%;
+}
+
+.floatright {
+    float: right;
+    margin-left: 3%;
+
+}
+
+main, footer { 
+    clear: both;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+footer {
+    
+    font-size: .75em;
+    text-align: center;
+    background-color: #8B4513;
+    padding: 10px 10px;
+}
