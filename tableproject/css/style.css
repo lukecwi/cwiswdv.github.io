@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+    
+    background: linear-gradient(to right, #0E76A8,  #E8888A );
+    
+}
+
+.tableStyle {
+   border: gray solid 1px;
+    width: 100%;
+  text-align: left;
+    font-size: 17px;
+    margin-bottom: 4em;
+    
+}
+
+caption {
+    
+    color: white;
+    font-size: 25px;
+}
+
+thead {
+    
+    
+}
+
+colgroup {
+    
+    background-color: blue;
+    
+}
+
+th, td {
+    
+    background: white;
+   
+}
+
+tfoot {
+    text-align: center;
+    
+}
+
+
+
+
+.gray {
+    
+    background-color: gray;
+}
+
+.pink {
+    
+    background-color: palevioletred;
+    
+}
+
+
+.light_blue {
+    
+    background-color: azure;
+    
+}
