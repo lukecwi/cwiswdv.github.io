@@ -1,0 +1,87 @@
+
+/* Luke Chulack 11/6/2020 */
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/roboto/roboto-italic-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    
+    background: url("../images/jewelry.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+main {
+    
+    background: linear-gradient(to right, #FFFFFF, #F0F9E6);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-family: sans-serif, serif, cursive;
+}
+	 
+div {	
+    
+    
+	background: rgba(243,205,170,0.4);
+    max-width: 70%;
+    border-radius: 15%;
+    margin: 0 auto;
+   
+}
+
+nav {
+    
+    clear: both;
+    
+}
+
+header>h1 {
+
+font-family: 'Pacifico', cursive, serif;
+    font-size: 4em;
+
+}
+
+header>h2 {
+    
+    font-family: robotoitalic, sans-serif, serif, cursive;
+    font-size: 2em;
+}
+
+footer {
+    
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+  
+}
+
+header>a>img {
+    
+    float: left;
+    border-radius: 50%;
+}
+
+
+nav>ul {
+    
+    list-style-type: none;
+    font-size: 1.5em;
+    
+}
+
+
+.addrightmargin {
+    
+    margin-right: 10%;
+    
+}
