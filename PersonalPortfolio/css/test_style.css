@@ -1,0 +1,27 @@
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1020px;
+	min-width: 640px;
+}
+
+body > header {
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+body > nav {
+	width: 20%;
+	float: left;
+	margin: 0 0 0 1.5%;
+}
+
+
+body > footer {
+	width: 100%;
+	clear: left;
+    background-color: darkgrey;
+    text-align: center;
+}
