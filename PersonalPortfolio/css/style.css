@@ -7,6 +7,9 @@
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+
 @font-face {
     font-family: 'source_sans_proregular';
     src: url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2'),
@@ -87,7 +90,7 @@ main {
     
     font-size: 40px;
     margin-bottom: 7px;
-   
+  
     
 
 }
@@ -96,7 +99,7 @@ main {
     
     font-size: 40px;
     margin-bottom: 15px;
-    
+ 
  
 }
 /* nav bar style */
@@ -143,6 +146,7 @@ li a:hover {
 
 
 nav li {
+    
   float: left;
   list-style-type: none;
     
@@ -158,6 +162,7 @@ nav li a, footer li a {
 /* footer style */
 
 footer {
+    
     background-color: black;
     position: fixed;
     left: 0;
@@ -186,6 +191,7 @@ footer li {
     padding: 3px;
     text-align: center;
 }
+
 /* about code */
 
 #about_wrapper {
