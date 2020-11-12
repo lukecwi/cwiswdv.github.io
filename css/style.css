@@ -1,0 +1,336 @@
+@charset "utf-8";
+
+/* Luke Chulack 11/12/2020 */
+/* full page style */
+
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/source-sans-pro/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* html and body */
+body {
+    
+
+ overflow: hidden;
+ white-space: nowrap;
+ background-image: url(../images/back.jpg);
+ margin: 0;
+ padding: 0;
+    
+  background-position: center center;
+  
+
+  background-repeat: no-repeat;
+  
+
+  background-attachment: fixed;
+  
+
+  background-size: cover;
+    
+     
+
+}
+
+
+
+/* main style */
+main {
+    
+    font-family: source_sans_proregular, sans-serif, serif;
+    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-family: sans-serif, serif, cursive;
+    
+}
+
+/* home page info */
+
+
+#homepage_info {
+    
+   
+    color: white;
+    text-align: center;
+  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+}
+
+#about_button {
+    
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    background-color: orange;
+    border: orange 1px solid;
+   
+}
+
+#h2_home {
+    
+    font-size: 40px;
+    margin-bottom: 7px;
+   
+    
+
+}
+
+#h1_home {
+    
+    font-size: 40px;
+    margin-bottom: 15px;
+    
+ 
+}
+/* nav bar style */
+
+nav {
+    
+   
+    background-color: black;
+    overflow: hidden;
+     
+    height: 100%;
+    
+    
+}
+
+nav a {
+    
+    padding: 1em;
+    color: aliceblue;
+    text-decoration: none;
+    
+    
+}
+
+nav ul, footer ul {
+    
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  text-align: right;
+  display:inline-block;
+  vertical-align:top;
+    
+
+}
+
+
+li a:hover {
+    
+    color: lightgreen;
+    
+}
+
+
+
+nav li {
+  float: left;
+  list-style-type: none;
+    
+}
+
+
+nav li a, footer li a {
+  display: block;
+  color: white;
+    
+}
+
+/* footer style */
+
+footer {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+	clear: left;
+    overflow: hidden;
+    
+      
+ 
+    
+}
+
+
+footer li {
+    
+     float: left;
+     list-style-type: none;
+     
+}
+
+
+.icon_footer {
+    
+    padding: 3px;
+    text-align: center;
+}
+/* about code */
+
+#about_wrapper {
+    
+   
+   
+    background: white;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+#about_wrapper p {
+    
+     word-wrap: break-word;
+    white-space:pre-wrap;
+    
+}
+
+#about_wrapper h2 {
+    
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
+
+/* form connact style */
+
+#form_connact {
+    width: 70%;
+    
+    background: white;
+    color: black;
+    box-sizing: border-box;
+    padding: 5% 5%;
+
+   
+    background: white;
+    max-width: 70%;
+    margin: 0 auto;
+    
+  
+
+}
+
+
+.input_form {
+    
+    width: 100%;
+    margin-bottom: 20px;
+   
+}
+
+.input_button {
+    
+    width: 100px;
+    height: 30px;
+    
+}
+
+#input_message {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    resize: none;
+    
+    
+}
+
+
+#form_connact h2{
+   
+    text-align: center;
+    font-size: 22px;
+ 
+}
+
+
+#input_sub {
+    width: 100%;
+    
+}
+
+/* exprience  style */
+
+
+
+#table_info {
+    background: white;
+    max-width: 70%;
+    margin: 0 auto;
+     
+    padding: 2em;
+
+}
+
+#table_info p { 
+    word-wrap: break-word;
+    white-space:pre-wrap;
+}
+
+
+#table_info h2 {
+    
+    border-bottom: gray 1px solid;
+    margin-bottom: 1px;
+    text-align: center;
+    
+}
+
+
+/* more to come */
+
+#more_to_come {
+    
+    background: white;
+    max-width: 70%;
+    margin: 0 auto;
+   
+    padding: 1em;
+    
+}
+
+#more_to_come h2 {
+    
+    text-align: center;
+    border-bottom: solid gray 1px;
+    
+}
+
+#more_to_come ul li {
+    
+    word-wrap: break-word;
+    white-space:pre-wrap;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
