@@ -217,6 +217,12 @@ footer li {
     text-align: center;
 }
 
+#about_con_info {
+    
+    text-align: center;
+    font-size: 14px;
+}
+
 /* form connact style */
 
 #form_connact {
