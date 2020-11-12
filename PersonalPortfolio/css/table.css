@@ -5,10 +5,23 @@
 
 table{
   width: 100%;
+    
+    
+
 
 }
 
 td, th {
 	border: 3px solid black;
+    font-family: 'Roboto', sans-serif, serif;
 }
 
+
+th {
+    
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
+    
+}

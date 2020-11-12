@@ -180,13 +180,12 @@ footer li {
      
 }
 
-footer img {
+
+.icon_footer {
     
-    text-align: center;
     padding: 3px;
+    text-align: center;
 }
-
-
 /* about code */
 
 #about_wrapper {
@@ -278,7 +277,7 @@ footer img {
     max-width: 70%;
     margin: 0 auto;
      
-    padding: 1em;
+    padding: 2em;
 
 }
 
@@ -320,6 +319,7 @@ footer img {
     
     word-wrap: break-word;
     white-space:pre-wrap;
+    list-style: square;
     
 
 }
