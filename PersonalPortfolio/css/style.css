@@ -3,22 +3,34 @@
 /* Luke Chulack 11/12/2020 */
 /* full page style */
 
-*{
+/*import fonts */
 
-  margin: 0;
-  padding: 0;
-    
-}
+
 
 /* html and body */
-body{
- overflow: hidden;
-    white-space: nowrap;
-      background-image: url(../images/back.jpg);
-    background-repeat: no-repeat, repeat;
+body {
+    
 
+    overflow: hidden;
+ white-space: nowrap;
+ background-image: url(../images/back.jpg);
+ margin: 0;
+ padding: 0;
+    
+  background-position: center center;
+  
+
+  background-repeat: no-repeat;
+  
+
+  background-attachment: fixed;
+  
+
+  background-size: cover;
 
 }
+
+
 
 /* main style */
 main {
@@ -31,12 +43,14 @@ main {
 
 #homepage_info {
     
-    color: white;
-    text-align: center;
-    padding: 15em;
-    margin-left: auto;
-    margin-right: auto;
-
+   
+  color: white;
+  text-align: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     
 }
 
@@ -55,6 +69,7 @@ main {
     font-size: 40px;
     margin-bottom: 7px;
    
+    
 
 }
 
@@ -72,11 +87,8 @@ nav {
    
     background-color: black;
     overflow: hidden;
-    margin: 0 auto;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%;
-   
+     
+ height: 100%;
     
     
 }
@@ -98,6 +110,7 @@ ul {
   text-align: right;
   display:inline-block;
   vertical-align:top;
+    
 
 }
 
@@ -132,8 +145,9 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-width: 100%;
+    width: 100%;
 	clear: left;
+    overflow: hidden;
 }
 
 
@@ -155,32 +169,60 @@ footer img {
 
 #about_wrapper {
     
-    width: 100px;
-    height: 100px;
-    background: white;
-    padding: 10em;
-    margin: auto;
+    word-wrap: break-word;
+    white-space:pre-wrap;
     
+   
+    width: 70%;
+ 
+    background: white;
+    color: black;
+    margin-left: 15%;
+	margin-top: 10%;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 5% 5%;
+
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
+
+#about_wrapper h2 {
+    
+    border-bottom: 1px solid gray;
+    text-align: center;
+}
 
 /* form connact style */
 
 #form_connact {
+    width: 70%;
     
-    width: 200px;
-    height: 200px;
     background: white;
-    padding: 15em;
-    margin: auto;
-    
+    color: black;
+    margin-left: 15%;
+	margin-top: 10%;
+    position: fixed;
+    box-sizing: border-box;
+    padding: 5% 5%;
+
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
+
 
 .input_form {
     
-    width: 300px;
-    height: 30px;
-    
+    width: 100%;
+    margin-bottom: 20px;
+   
 }
 
 .input_button {
@@ -191,26 +233,46 @@ footer img {
 }
 
 #input_message {
-    width: 300px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    resize: none;
+    
+    
+}
+
+
+#form_connact h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+
+#input_sub {
+    width: 100%;
     
 }
 
 /* exprience  style */
 
-article {
-    width: 400px;
-    text-align: center;
-}
 
 
 #table_info {
-    width: 500px;
-    height: 400px;
     background: white;
-    padding: 5em;
-    margin: auto;
+    margin: 0 auto;
+    word-wrap: break-word;
+    white-space:pre-wrap;
+    width: 70%;
+    height: 70%;
+
+    top: 50%;
+    left: 50%;
     
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 0.5em;
 
 }
 
@@ -218,5 +280,20 @@ article {
     
     border-bottom: gray 1px solid;
     margin-bottom: 1px;
+    text-align: center;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

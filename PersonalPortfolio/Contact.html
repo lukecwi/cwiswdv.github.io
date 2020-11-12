@@ -10,7 +10,7 @@
         <meta name="author" content="Luke Chulack">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        
+        <link rel="icon" href="images/logo.png">
     </head>
     
     
@@ -35,15 +35,18 @@
  
             <div id="form_connact">
             
-                <caption>Contact me for a quote</caption>
-                <form action="Contact.html" method="">
+                <h2>Contact me for a quote</h2>
+                <form action="mailto:lukechulack@my.cwi.edu?subject=Software devlopment quote" enctype="text/plain" method="POST">
                 
                     <input class="input_form" type="text" name="Name"  placeholder="Full Name" id="Name">
+                    <br>
                     <input class="input_form" type="email" name="Email" placeholder="Email" id="Email">
+                    <br>
                     <input class="input_form" type="number" name="Phone" placeholder="Phone Number" id="Phone">
+                    <br>
                     <textarea id="input_message" name="text" placeholder="Message" ></textarea>
-                    <input class="input_button" type="submit" value="Send">
-                    <input class="input_button" type="submit" value="Reset">
+                    <br>
+                    <input class="input_button" type="submit" value="Send" id="input_sub">
                     
                 </form>
             
@@ -54,8 +57,8 @@
         <footer>
         
             <ul>
-              <li> <a href="http://github.com/"><img src="images/linkedin-color-0E76A8.png" ></a></li> 
-                <li>  <a href="https://www.linkedin.com/"><img src="images/github-color-000000.png" ></a></li>
+              <li> <a href="https://www.linkedin.com/" ><img src="images/linkedin-color-0E76A8.png" alt="Linkedin logo"></a></li> 
+                <li>  <a href="http://github.com/"><img src="images/github-color-000000.png" alt="github logo" ></a></li>
             </ul>
         </footer>
         
