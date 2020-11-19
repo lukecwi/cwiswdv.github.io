@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+
+
+html {
+   font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+   height: 100%;
+   font-size: 18px;
+   color: rgb(101, 101, 101);
+}
+
+body {
+   padding: 20px 0px 0px 20px;
+   position: relative;
+}
+
+h1 {
+   font-weight: normal;
+   font-size: 2.4em;
+   margin-top: 5px;
+   margin-left: 120px;
+   padding-bottom: 40px;
+}
+
+
+
+label {
+   display: inline-block;
+   width: 140px;
+   margin-left: 10px;
+}
+
+div#boxOptions {
+   width: 440px;
+   line-height: 2em;
+}
+
+div#baseOptions {
+   border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+input.stopValue {
+   width: 190px;
+}
+
+div.stopOption {
+   margin: 5px 0px;
+   padding: 0px;
+   border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+input.removeStop {
+   width: 25px;
+   height: 25px;
+   margin: 10px;
+   font-size: 1em;
+}
+
+select#directionKeyword {
+   font-size: 0.95em;
+   color: rgb(101, 101, 101);
+}
+
+input#directionDegree {
+   width: 150px;
+}
+
+
+label.lAlpha {
+   width: 50px;
+}
+
+input.gAlpha {
+   width: 130px;
+}
+
+div#outcome {
+   position: absolute;
+   top: 120px;
+   left: 410px;
+   font-size: 22px;
+}
+
+
+div#outcomebox {
+   width: 350px;
+   height: 250px;
+   line-height: 3.3em;
+   position: absolute;
+   top: 20px;
+   left: 121px;;
+   background: linear-gradient(white, black);
+   outline: 1px solid gray;
+}
+
+
+
+div#outcomecode {
+   position: absolute;
+   top: 280px;
+   left: 120px;
+   width: 1050px;
+}
+
+
+span#gRule {
+   display: block;
+   width: 450px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+
+span#gVal {
+   display: block;
+   width: 650px;
+   position: absolute;
+   top: -5px;
+   left: 380px;
+   line-height: 1.4;
+}
+
+   

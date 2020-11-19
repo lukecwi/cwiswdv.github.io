@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>Gradient Borders</title>
+   <link href="gradient_border_base.css" rel="stylesheet" />
+   <link href="gradient_border_layout.css" rel="stylesheet" />
+   <script src="gradient_border_demo.js" async></script>
+</head>
+
+<body>
+   <h1>Gradient Borders</h1>
+   <div id="borderOptions">
+      <label for="showGrid">Show Grid</label><input type="checkbox" checked id="showgrid" style="width: 20px"/><br />
+      <label id="bImgL" for="bImg">gradient</label> 
+      <textarea id="bImg">linear-gradient(red, green, blue)</textarea> <br />
+      <label for="bSlice">image-slice</label> 0% <input id="bSlice" type="range" min="0" max="50" step="1" value="25" />50% <br />
+      <label for="bFill">image-fill</label><input type="checkbox" id="bFill" style="width: 20px" /><br />
+      <label for="hRepeat">horiz repeat</label>
+      <select id="hRepeat">
+         <option value="" selected></option>
+         <option value="stretch">stretch</option>
+         <option value="repeat">repeat</option>
+         <option value="round">round</option>
+         <option value="space">space</option>
+      </select><br />
+      <label for="vRepeat">vert repeat</label>
+      <select id="vRepeat">
+         <option value="" selected></option>
+         <option value="stretch">stretch</option>
+         <option value="repeat">repeat</option>
+         <option value="round">round</option>
+         <option value="space">space</option>
+      </select>      
+   </div>
+   
+     
+   <div id="outcome">
+     <div id="framepreview">
+         <img src="redot.png" id="topline" />
+         <img src="redot.png" id="rightline" />
+         <img src="redot.png" id="bottomline" />
+         <img src="redot.png" id="leftline" />
+      </div>
+      <div id="caption">Gradient Image</div>
+      
+      <div id="outcomebox">
+         <img src="redot.png" id="topline2" />
+         <img src="redot.png" id="rightline2" />
+         <img src="redot.png" id="bottomline2" />
+         <img src="redot.png" id="leftline2" />        
+      </div>      
+      <div id="outcomecode" style="line-height: 1.5em">
+         border: 30px transparent solid;<br />
+         border-image: (<span id="imgFile">linear-gradient(red, green, blue)</span>)  <span id="sliceVal">20</span> <span id="fillVal"></span> <span id="hrepeatVal"></span> <span id="vrepeatVal"></span>; 
+      </div>
+   </div>   
+
+</body>
+</html>

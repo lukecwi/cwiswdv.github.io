@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+   <meta charset="utf-8" />
+   <title>Radial Gradients as Images</title>
+   <link href="radial_image_base.css" rel="stylesheet" />
+   <link href="radial_image_layout.css" rel="stylesheet" />
+   <script src="radial_image_demo.js" async></script>
+</head>
+
+<body>
+   <h1>Radial Gradients as Images</h1>
+   <div id="boxOptions">
+   <div id="boxOptions">
+      <div id="imageOptions">
+         <label>Image Size</label>0%<input id="imgSizeH" type="range" min="0" max="100" value="100" step="1" />100%<br />
+         <label></label>0%<input id="imgSizeV" type="range" min="0" max="100" value="100" step="1" />100%<br /> 
+         <label>Image Repeat</label>
+         <select id="imgRepeat">
+            <option value="repeat" selected>repeat</option>
+            <option value="repeat-x">repeat-x</option>            
+            <option value="repeat-y">repeat-y</option>
+            <option value="no-repeat">no-repeat</option>            
+            <option value="round">round</option>
+            <option value="space">space</option>              
+         </select><br />                
+      </div>      
+      <div id="baseOptions"> 
+         <label for="shapeType">Shape</label>
+         <select id="shapeType">
+            <option value="" selected></option>
+            <option value="circle">circle</option>            
+            <option value="ellipse">ellipse</option>  
+         </select><br />
+         <label>Size</label><input type="radio" name="sizeType" id="sizeKey" checked />   
+         <select id="sizeKeyword">
+            <option value="" selected></option>
+            <option value="farthest-corner">farthest-corner</option>            
+            <option value="farthest-side">farthest-side</option>  
+            <option value="closest-corner">closest-corner</option>     
+            <option value="closest-side">closest-side</option>                     
+         </select><br />  
+         <label></label><input type="radio" name="sizeType" id="sizeP" />  
+         0px <input id="hsizePerc" type="range" min="0" max="300" step="10" value="150" /> 300px<br /> 
+         <label></label><span style="display: inline-block; width: 25px"></span>0px <input id="vsizePerc" type="range" min="0" max="300" step="10" value="150" /> 300px<br />          
+         <label>Position</label><input type="radio" name="posType" id="posKey" checked />   
+         <select id="hKeyword">
+            <option value="" selected></option>
+            <option value="left">left</option>            
+            <option value="center">center</option>  
+            <option value="right">right</option>                         
+         </select> 
+         <select id="vKeyword">
+            <option value="" selected></option>
+            <option value="top">top</option>            
+            <option value="center">center</option>  
+            <option value="bottom">bottom</option>                         
+         </select><br />
+         <label></label><input type="radio" name="posType" id="posP" />  
+         0% <input id="hPos" type="range" min="0" max="100" step="1" value="50" /> 100%<br /> 
+         <label></label><span style="display: inline-block; width: 25px"></span>0% <input id="vPos" type="range" min="0" max="100" step="1" value="50" /> 100%                            
+      </div>
+      
+      <div class="stopOption">
+         <label>Gradient Color</label> <input class="gColor" type="color" value="#FFFF80" />
+         <label class="lAlpha">Alpha</label> 0 <input class="gAlpha" type="range" min="0" max="1" step="0.01" value="1" /> 1<br />
+         <label>Color Stop</label> 0% <input class="stopValue" type="range" min="0" max="100" step="1" value="0" /> 100%<br />         
+         <input type="button" class="removeStop" value="-" />
+      </div>
+      <div class="stopOption">
+         <label>Gradient Color</label> <input class="gColor" type="color" value="#FF8000" />
+         <label class="lAlpha">Alpha</label> 0 <input class="gAlpha" type="range" min="0" max="1" step="0.01" value="1" /> 1<br />
+         <label>Color Stop</label> 0% <input class="stopValue" type="range" min="0" max="100" step="1" value="0" /> 100%<br />         
+         <input type="button" class="removeStop" value="-" />
+      </div> 
+      <div class="stopOption">
+         <label>Gradient Color</label> <input class="gColor" type="color" value="#800000" />
+         <label class="lAlpha">Alpha</label> 0 <input class="gAlpha" type="range" min="0" max="1" step="0.01" value="1" /> 1<br />
+         <label>Color Stop</label> 0% <input class="stopValue" type="range" min="0" max="100" step="1" value="75" /> 100%<br />         
+         <input type="button" class="removeStop" value="-" />
+      </div>	  
+      
+      <div id="addBox">
+         <input type="button" id="addStop" value="+" />      
+      </div>
+   </div>
+   
+     
+   <div id="outcome">
+      <div id="outcomebox"></div>      
+      <div id="outcomecode">
+         <span id="sRule">background-size: </span><span id="sVal">25% 25%</span>
+         <span id="rRule">background-repeat: </span><span id="rVal">repeat;</span>
+         <span id="gRule">background-image: radial-gradient(</span><span id="gVal">white, black);</span>
+      </div>
+   </div>   
+
+</body>
+</html>
