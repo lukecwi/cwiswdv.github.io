@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <meta name="description" content="Boise noodles is the only place in idaho with the best noodles ever">
+    <meta name="keywords" content="boise,noodles,noodle restaurant">
+    <meta name="author" content="Luke Chulack">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="icon" href="images/logo/icon2.jpg" >
+
+    <title>Boise Noodles</title>
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="images/logo/logo_size4.jpg">
+            </a>
+
+            <button type="button" class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav ml-auto"> 
+
+                        <li class="nav-item"> 
+
+                            <a href="index.html" class="nav-link">Home</a>
+
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#about" class="nav-link">About us</a>
+
+                        </li>
+                        <li class="nav-item">
+
+                            <a href="#products" class="nav-link">Our Products</a>
+
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+ </header>
+
+<main class="bg-light">
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+    <div class="carousel-item active image_style" id="item_a">
+        <div class="container">
+        </div>
+    </div>
+     <div class="carousel-item image_style" id="item_b">
+    <div class="container">  
+       
+    </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+
+<div id="about">
+
+ 
+    <hr>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="text-muted">From humble origins. To a mightly present.</h2>
+        <p class="lead">Our founder, Martin Chujak was born in Belgrade, Yugoslavia, in 1889. Martin loved cooking, and when he turned 18 he left Yugoslavia to travel the world. On his travels, he met his mentor in New York and learned the art of noodle-making. After 10 years of being a noodle maker, market left new York and moved to Boise, where he founded noodles da Boise, later renamed Boise Noodles.</p>
+      </div>
+      <div class="col-md-4">
+        <img id="chef_img" class="img-fluid mx-auto" src="images/chef/ourfounder1.png" alt="Martin Chujak and some guy">
+      </div>
+    </div>
+
+    <hr>
+
+</div>
+
+
+<!-- noodle row 1-->
+  <div class="album py-5 bg-light" id="products">
+    <div class="container">
+        <h1 id="product_h1" class="text_center text-muted">Our Products:</h1>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="card-header">
+                Classic noodle
+              </div>
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top noodle_card_img" src="images/food/foodset1.jpg" alt="Classic Noodle Bowl" data-toggle="modal" data-target="#modalfoodset1">
+            <div class="card-body">
+              <p class="card-text">Our Classic noodle bowl provides you with 43 grams a delicious flavors and spices at an economical price.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card-header">
+                Seaweed bowl
+              </div>
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top noodle_card_img" src="images/food/foodset2.jpg" alt="Seaweed noodle Bowl" data-toggle="modal" data-target="#modalfoodset2">
+            <div class="card-body">
+                <p class="card-text">Our seaweed bowl comes with our delicious noodles with seaweed and a hard-boiled egg.</p>
+                <div class="d-flex justify-content-between align-items-center">
+            
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card-header">
+                Broccoli bowl
+              </div>
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top noodle_card_img" src="images/food/foodset3.png" alt="Broccoli Noodle Bowl" data-toggle="modal" data-target="#modalfoodset3">
+            <div class="card-body">
+                <p class="card-text">Broccoli lovers will enjoy a bowl of the best Broccoli noodles in all 50 states, according to The Association of the Great Food.</p>
+                <div class="d-flex justify-content-between align-items-center">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- noodle row 2-->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+                <div class="card-header">
+                    Beef bowl
+                  </div>
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top noodle_card_img" src="images/food/foodset4.png" alt="Beef Noodle Bowl" data-toggle="modal" data-target="#modalfoodset4">
+                <div class="card-body">
+                  <p class="card-text">You will get your needed Carbohydrates and protein with our Beef noodle bowl. Only The best USDA Prime Beef is used.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-md-4">
+                <div class="card-header">
+                    ShellFish bowl
+                  </div>
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top noodle_card_img" src="images/food/foodset5.png" alt="shell fish noodle Bowl" data-toggle="modal" data-target="#modalfoodset5">
+                <div class="card-body">
+                    <p class="card-text">Sea Food lovers beware! Our 5 star rated shellfish noodle bowl is here. You will never see shellfish the same way again.  </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div  id="last_card" class="col-md-4">
+                <div class="card-header">
+                    Asparagus bowl
+                  </div>
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top noodle_card_img" src="images/food/foodset6.png" alt="asparagus Noodle Bowl" data-toggle="modal" data-target="#modalfoodset6">
+                <div class="card-body">
+                    <p class="card-text">Asparagus is one of the most requested foods, and now our new asparagus noodle bowl is here to help.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+ </div>
+
+    </div>
+</main>
+   
+    <footer class="jumbotron text-center">
+        <div class="container">
+
+                <p id="line_info"><a href="tel:555-555-5555">555-555-5555</a> | <a href="mailto:Contact@Boisenoodles.com">Contact@Boisenoodles.com</a> | <a href="https://cutt.ly/VhKkSN2" target="_black">Boise 1500W W Idaho St</a></p>
+                <div id="images_footer">
+
+                    <a href="https://www.facebook.com/" target="_blank">
+
+                        <img class="footer_img" src="images/social icons/facebook-4-48.png" alt="facebook icon">
+
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank">
+
+                        <img class="footer_img" src="images/social icons/twitter-4-48.png" alt="twitter icon">
+
+                    </a>
+
+                    <a href="https://pinterest.com/" target="_blank" >
+
+                        <img class="footer_img" src="images/social icons/pinterest-1-48.png" alt="pinterest icon">
+
+                    </a>
+
+                </div>
+
+                <a href="index.html"> <p id="copy_right">&copy; Boise Noodles 2021</p>
+                </a>
+            </div>
+    </footer>
+
+    <!-- my modals -->
+    
+    <!-- row 1 images -->
+
+    <div class="modal fade" id="modalfoodset1" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset1.jpg">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalfoodset2" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset2.jpg">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalfoodset3" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset3.png">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+      
+    <!-- row 2 images -->
+
+    <div class="modal fade" id="modalfoodset4" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset4.png">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalfoodset5" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset5.png">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+        </div>
+
+
+        <div class="modal fade" id="modalfoodset6" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+  
+
+          <div class="modal-content">
+            <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+
+             </div>
+            <div class="modal-body">
+  
+              <div class="embed-responsive embed-responsive-16by9">
+                <img class="embed-responsive-item"  src="images/food/foodset6.png">
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+.carousel-item {
+
+    height: 32rem;
+    background: #777;
+    position: relative;
+}
+
+.container {
+
+
+}
+
+#item_a {
+
+    background-image: url("../images/slides/slide1.jpg");
+
+
+}
+
+#item_b {
+
+    background-image: url("../images/slides/slide3.jpg");
+}
+
+
+.noodle_card_img {
+
+    cursor: pointer;
+
+}
+
+
+.image_style {
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text_center {
+
+    text-align: center;
+    
+}
+
+#product_h1 {
+
+    margin-bottom: 2rem;
+}
+
+
+#line_info  {
+
+    color: black;
+    
+
+} 
+
+.footer_img {
+
+    margin-top: 0.5rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+
+
+#copy_right {
+
+    margin-top: 2rem;
+    margin-right: 2rem;
+}
+
+#about {
+
+    padding: 3rem;;
+
+}
+
+#chef_img {
+
+    display: none;
+    cursor:auto;
+
+}
+
+@media only screen and (min-width: 781px) {
+    
+    #chef_img {
+
+        display: inline;
+    
+    }
+
+
+}
