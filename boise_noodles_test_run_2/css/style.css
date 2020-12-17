@@ -1,0 +1,41 @@
+.carousel-item {
+
+    height: 32rem;
+    background: #777;
+    position: relative;
+}
+
+.container {
+
+
+}
+
+#item_a {
+
+    background-image: url("../images/slides/slide1.jpg");
+
+
+}
+
+#item_b {
+
+    background-image: url("../images/slides/slide3.jpg");
+}
+
+.image_style {
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+.text_center {
+
+    text-align: center;
+    
+}
+
+#product_h1 {
+
+    margin-bottom: 2rem;
+}
