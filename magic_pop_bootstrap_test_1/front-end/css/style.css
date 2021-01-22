@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* snap font */
+@font-face {
+    font-family: 'snap_itcregular';
+    src: url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff2') format('woff2'),
+         url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* font  */
+p {
+    
+    font-family: 'snap_itcregular';
+    color: black;
+}
+
+
+/* Hero section Selector */
+#the_hero {
+
+   
+}
+
+
+/* hero image secletor for jumbotron */
+.jumbotron {
+
+   background-image: url(../media/images/other/jumbo/jumbo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+
+ }
+
+
+/* About section Selector */
+#about {
+    
+  
+
+}
+
+/* info_on_us section Selector */
+#info_on_us {
+    
+    
+}
+
+/* Products section Selector */
+#products {
+    
+    
+}
+
+
+/* simple moblie first setup */
+@media only screen and (min-width: 600px) {
+    
+    
+}
