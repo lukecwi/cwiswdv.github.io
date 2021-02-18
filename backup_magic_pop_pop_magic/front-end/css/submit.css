@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/*********************************************************************
+***
+*Original Author: Luke Chulack                         
+*Date Created: 01/29/2021                                     
+*Version: 1.0                                           
+*Date Last Modified: 01/29/2021                               
+*Modified by: Luke Chulack        
+*Modification log:         
+    version 1.0 - 01/29/2021 - css for submit.html to have a background and main div. form landing page.
+
+***
+******************************************************************** */
+
+/* snap font */
+@font-face {
+    font-family: 'snap_itcregular';
+    src: url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff2') format('woff2'),
+         url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* background */
+body {
+
+    background: url("../media/images/other/back/back2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+/* form */
+
+#main {
+    font-family: 'snap_itcregular';
+
+    background-color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding: 1rem;
+
+}
+
+#back_arrow {
+
+    text-align: left;
+
+}
+
+/* simple moblie first setup */
+@media only screen and (min-width: 600px) {
+    
+    
+}
