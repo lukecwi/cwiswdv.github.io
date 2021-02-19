@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Luke Chulack                         
+#Date Created: 01/22/2021                                     
+#Version: 4.0                                           
+#Date Last Modified: 02/19/2021                               
+#Modified by: Luke Chulack                                          
+#Modification log: 
+
+    version 1.0 - 01/22/2021 - built essenital files and folders. built nav, and home page.
+    version 2.0 - 01/29/2021 - added modal for contact, basic inline email list, version 1 of the FAQ.
+    version 3.0 - 02/05/2021 - added about page and faqs redesign, added jquery ui.
+    version 4.0 - 02/19/2021 - added new meta tags: twiter and open graph, added product section with cart, timeline for about, and regex for email and contact forms.
+
+
+ --
+---------------------------------------------------------------------------------------------------------------->
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="The home of the best popcorn on the planet">
+        <meta name="keywords" content="popcorn,snacks,Pop Magic">
+        <meta name="author" content="Luke Chulack">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <!-- social meida tags open graph and twitter cards-->
+
+        <!-- basic info -->
+        <meta name="og:locale" content="en_US">
+        <meta name="og:type" content="website">
+
+        <!--basic setup -->
+        <meta name="og:image" content="front-end/media/images/logo/icons/icon2.png">
+        <meta name="og:title" content="Pop Magic">
+        <meta name="og:description" content="The home of the best popcorn on the planet">
+
+        <!-- basic twitter cards -->
+        <meta name="twitter:card" content="summary">  
+        <meta name="twitter:title" content="Pop Magic">
+        <meta name="twitter:description" content="The home of the best popcorn on the planet">
+
+        <title>Pop Magic</title>
+        
+        <!-- main stylesheet -->
+        <link rel="stylesheet" type="text/css" href="front-end/css/style.css">
+        
+        <!-- bootstrap import stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <!-- Jquery ui stylesheet -->
+    <link rel="stylesheet" type="text/css" href="front-end/script/jquery-ui-1.12.1.custom/jquery-ui.min.css">    
+
+    <!-- font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- favicon -->
+        <link rel="icon" href="front-end/media/images/logo/icons/icon2.png">
+    </head>
+    <body>
+        
+        <header>
+        
+                <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="home">
+
+                    <a class="navbar-brand" href="#home"><img src="front-end/media/images/logo/logo_167_62.png"></a>
+                    
+                    <button type="button" class="navbar-toggler" role="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbarResponsive"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="navbar">
+
+                        <ul class="navbar-nav  ml-auto">
+
+                            <li class="nav-item"><a href="#home" class="nav-link"><p>Home</p></a></li>
+                            <li class="nav-item"><a href="#about" class="nav-link"><p>About</p></a></li>
+                            <li class="nav-item"><a href="#products" class="nav-link"><p>Products</p></a></li>
+
+                            <li class="nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#contact_page"><p>Contact</p></a></li>
+
+                            <li class="nav-item"><a href="#" class="nav-link"><p> Check out <i class="fa fa-shopping-cart"></i> <span id="cart_num">0</span> </p></a></li>
+
+                           
+
+                        </ul>
+
+                    </div>
+                    
+                </nav>
+            
+            </header>
+            <section id="the_hero">
+                
+                <div class="jumbotron jumbotron-fluid">
+                  <div class="container">
+                      
+                    </div>
+                </div>
+                
+            </section>
+            <section id="news_letter">
+               
+            <!-- form for email -->
+
+               <form id="email_form" action="submit.html" method="GET">
+
+                <h4>Join Our Email List</h4>
+
+                  <div>                
+                    <label for="email_address_name">Join Our Email List</label>
+                    <input type="text" name="email_address_name"  id="email_address_name" placeholder="First Name">           
+                    <span></span>
+                    <input type="text" name="email_address_news"  id="email_address_news" placeholder="Email">
+                    <span></span>
+                    <input type="button" id="sign_up" value="Join" >
+                
+                  </div>
+          
+              </form>
+
+
+            </section>
+
+            <hr>
+
+            <!-- about code -->
+            <section id="about" >
+                <div class="about_container container">
+
+                    <!-- about info-->
+
+
+                    <h2>Our Story:</h2>
+                    <div class="p_flex row justify-content-lg-center">
+
+                        <div id="about_p" class="col-7 mx-auto" >
+                        <p> 
+                            Our story is one from field to bowl. 
+                            Our founder Brian Rakenton was born in the early 30s and the great depression was just underway.
+                             In Iowa, Brian was surrounded by corn and fell in love with  it. 
+                             He spent his early years working in the fields  and at the age of 18 went to The University of Iowa.
+                             He returned to his father's fields and took over the farm, turning it into the first pop magic farm. 
+                        </p>
+                    </div>
+                    <div id="image_div_about" class="col-5 ">
+                        <div class="img_flex">
+
+                            <img id="a_slide" alt="black and white image of popcorn corn still on the cob" src="front-end/media/images/about/corn_about.png" > 
+
+
+                        </div>
+                         <div id="slides">
+
+                            <img alt="black and white image of a corn farm barn and silo" src="front-end/media/images/about/corn_field_about.png">
+                            <img alt="black and white image of corn plants" src="front-end/media/images/about/corn_plants_about.png">
+                            <img alt="black and white image of a corn farm barn" src="front-end/media/images/about/farm_corn_about.png">
+
+                         </div>
+                    </div>
+                    </div>
+
+                      <!-- timeline for about section. -->
+
+                      <br>
+                      <br>
+                    <div class="text-center">
+                      <!-- timeline set 1 -->
+                        <div class="row no-gutters ">
+                          <div class="col-sm"></div>
+                      
+                          <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                              <div class="col">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                              <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </h5>
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title text-muted">1952</h4>
+                                <p class="card-text"> 21 year old Brain Rakenton patents a new popcorn variety and incorporates Pop magic</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+
+                        <!-- timeline set 2 -->
+                        <div class="row no-gutters">
+                          <div class="col-sm">
+                            <div class="card shadow">
+                              <div class="card-body">
+                                <h4 class="card-title">1961</h4>
+                                <p class="card-text">pop magic sells its one millionth pound of popcorn</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                              <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </h5>
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                          </div>
+                          <div class="col-sm"></div>
+                        </div>
+
+                        <!-- timeline set 3 -->
+
+                        <div class="row no-gutters">
+                          <div class="col-sm"></div>
+                          <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                              <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </h5>
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                          </div>
+                          <div class="col-sm">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title">1977</h4>
+                                <p>Pop magic turns 25 years old.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- timeline set 4 -->
+                        <div class="row no-gutters">
+                          <div class="col-sm">
+                            <div class="card">
+                              <div class="card-body">
+                                <h4 class="card-title">1990</h4>
+                                <p>Pop magic turns 38 years old.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                              <div class="col border-right">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                            <h5 class="m-2">
+                              <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                            </h5>
+                            <div class="row h-50">
+                              <div class="col">&nbsp;</div>
+                              <div class="col">&nbsp;</div>
+                            </div>
+                          </div>
+                          <div class="col-sm"></div>
+                        </div>
+                        
+                  
+
+                        <!--timeline set 5-->
+                        <div class="row no-gutters">
+                            <div class="col-sm"> </div>
+                            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                              <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                              </div>
+                              <h5 class="m-2">
+                                <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                              </h5>
+                              <div class="row h-50">
+                                <div class="col border-right">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                              </div>
+                            </div>
+                            <div class="col-sm ">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">2006</h4>
+                                  <p>Pop magic turns 54 years old.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <!--timeline set 6-->
+                      <div class="row no-gutters">
+                        <div class="col-sm ">
+                          <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">2021</h4>
+                              <p>Pop magic turns 69 years old.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                          <div class="row h-50">
+                            <div class="col border-right">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                          </div>
+                          <h5 class="m-2">
+                            <span class="badge badge-pill bg-light border"><i class="fa fa-star" aria-hidden="true"></i></span>
+                          </h5>
+                          <div class="row h-50">
+                            <div class="col">&nbsp;</div>
+                            <div class="col">&nbsp;</div>
+                          </div>
+                        </div>
+                        <div class="col-sm"></div>
+                      </div>
+                </div>
+
+            </section>
+
+            <!-- product code -->
+            <section id="products">
+                <div class="products_container container">
+
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Our products:</h2>
+                    <div class="p_flex row justify-content-md-center">
+
+                        <div id="small_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/s250px.png">
+                            <p>Small bag set</p>
+                            <button id="buy_button_1" class="buy_button" value="add"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                          <span  class="buy_button_num" id="a"><i class="arrow left"></i> <span class="display_num" id="display_num_1" value="display_num_1">0</span> <i class="arrow right"></i></span>
+                        </div>
+
+                        <div id="med_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/m250px.png">
+                            <p>Medium bag set</p>
+
+                            <button  id="buy_button_2" class="buy_button" value="add"><i class="fa fa-shopping-cart" ></i> add to cart</button>
+                            <span class="buy_button_num"><i class="arrow left"></i> <span class="display_num" id="display_num_2" value="display_num_2">0</span> <i class="arrow right"></i></span>
+
+                        </div>
+                        <div id="large_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/l250px.png">
+                            <p>Large bag set</p>
+
+                            <button id="buy_button_3" class="buy_button" value="add"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <span class="buy_button_num"><i class="arrow left"></i> <span class="display_num" id="display_num_3" value="display_num_3">0</span> <i class="arrow right"></i></span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="products_container container">
+
+                    <div class="p_flex row justify-content-md-center">
+
+                        <div id="small_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/s250px.png">
+                            <p>Small bag set</p>
+                            <button id="buy_button_4" class="buy_button" value="add" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <span class="buy_button_num"><i class="arrow left"></i> <span class="display_num" id="display_num_4" value="display_num_4">0</span> <i class="arrow right"></i></span>
+
+                        </div>
+                        <div id="med_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/m250px.png">
+                            <p id="medium_p">Medium bag set</p>
+
+                            <button id="buy_button_5"  class="buy_button" value="add"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <span class="buy_button_num"><i class="arrow left"></i> <span class="display_num" id="display_num_5" value="display_num_5">0</span> <i class="arrow right"></i></span>
+
+
+                        </div>
+                        <div id="large_corn" class="col-md-auto" >
+                            <img src="front-end/media/images/other/buy/l250px.png">
+                            <p>Large bag set</p>
+
+                            <button id="buy_button_6" class="buy_button" value="add"><i class="fa fa-shopping-cart"></i> add to cart</button>
+                            <span class="buy_button_num"><i class="arrow left"></i> <span class="display_num" id="display_num_6" value="display_num_6">0</span> <i class="arrow right"></i></span>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+ 
+
+          <!--  FAQ code -->
+            <section id="info_on_us">
+            
+                <div class="jumbotron jumbotron-fluid" id="faq">
+               
+                    <div class="container">
+                     <!--           
+
+                        <div class="py-5 bg-light" id="products">
+                            <h2>FAQS: </h2>
+
+                            <div id="accordion">
+                                <h3>Why Pop Magic?</h3>
+                               <div>
+                                   <p>
+
+                                    Pop Magic popcorn was rated best popcorn of the year 5 consecutive years in a row for taste and pop-ability.
+                                    
+                                   </p>
+                               </div>
+                               <h3>Ours vs theirs.</h3>
+                               <div>
+                                   <p>
+                                    Out of all 13,092 registered popcorn companies in North America, we still rank number one in pop-ability
+                                    </p>
+                               </div>
+                               <h3>Average Shipping time.</h3>
+                               <div>
+                                   <p>
+
+                                    As long as you are in North America we guarantee that your popcorn will get to you in less than 5 day.
+                                    
+                                   </p>
+                               </div>
+                           </div>
+                   
+                        </div>
+                        
+                        
+-->
+                    </div>
+                    
+                      
+
+                </div>
+
+
+            </section>
+
+          
+            <!-- footer code -->
+            <footer  class="bg-light text-center text-lg-start">
+
+                <div class="text-center p-3">
+                <div id="social_links">
+                    <a href="https://www.pinterest.com/" target="_blank"><img src="front-end/media/images/social_icons/pinterest24px.png"></a> 
+                    <a href="https://twitter.com/" target="_blank"><img src="front-end/media/images/social_icons/twitter24px.png"></a> 
+                    <a href="https://www.facebook.com/" target="_blank"><img src="front-end/media/images/social_icons/facebook24px.png"></a> 
+                </div>
+                    <div>
+                    <a class="text-dark" href="index.html">
+                        
+                        &#169; 2021 Pop Magic
+
+                    </a>
+                </div>
+                </div>
+
+            </footer>
+
+            <!--Modal code for contact form-->
+            <div class="modal fade" id="contact_page" tabindex="-1" role="dialog"  aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+          
+        
+                  <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>  Contact Us</h1>
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+        
+                     </div>
+                    <div class="modal-body">
+          
+                        <form id="contact_form" action="submit.html" method="get">
+
+                            <div>
+                                <input type="text" name="email_address" id="email_address" placeholder="E-mail">
+                                <span></span>
+                            </div>
+                            <div>
+                                <input type="text" name="phone" id="phone" placeholder="Phone" >
+                                <span></span>
+                            </div>
+                            <div>
+                                <select name="country" id="country">
+                                    <option value="">Select a country</option>
+                                    <option>USA</option>
+                                    <option>Canada</option>
+                                    <option>Mexico</option>
+                                    <option>Not North America</option>
+
+                                </select>
+                                <span></span>
+
+                            </div>
+                            <div>
+                                <label>Contact me by:</label>
+                                <input type="radio" name="contact" id="text" value="text" checked >Text
+                                <input type="radio" name="contact" id="email" value="email" >Email
+                            
+                                <input type="radio" name="contact" id="none" value="none" >Don't
+                                contact me
+                            </div>
+                          
+                            <div>
+                                
+                                <textarea name="text" id="comments" placeholder="Comments"></textarea>
+                                <span></span>
+
+                            </div>
+                     
+                            <div>
+                                <input type="button"  id="register" value="Send" >
+                                <input type="button" id="reset_form" value="Reset" >
+                            </div>
+                        </form>
+          
+                    </div>
+          
+                  </div>
+          
+                </div>
+              </div>
+    
+                      
+        <!-- jquery import -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <!--Jquery Ui import-->
+        <script src="front-end/script/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>      
+      
+        <!-- main script import -->
+        <script type="application/javascript" src="front-end/script/script.js"></script>
+        
+        <!-- popper import -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        
+        <!-- bootstrap js import -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+
+</html>

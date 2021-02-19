@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+/*********************************************************************
+***
+*Original Author: Luke Chulack                         
+*Date Created: 01/22/2021                                     
+*Version: 4.0                                           
+*Date Last Modified: 02/19/2021                               
+*Modified by: Luke Chulack        
+*Modification log:   
+    version 1.0 - 01/22/2021 - CSS for nav, and home page. other basic css.
+    version 2.0 - 01/29/2021 - css for contact modal, email register and faq.
+    version 3.0 - 02/05/2021 -  fixed email list, modal,  and faqs redesign. 
+    version 4.0 - 02/19/2021 -  styled cart, more moblie friendly. 
+
+***
+******************************************************************** */
+
+
+/* snap font */
+@font-face {
+    font-family: 'snap_itcregular';
+    src: url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff2') format('woff2'),
+         url('fonts/Snap_ITC_Regular/design.graffiti.snap____-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* font  */
+p {
+    
+    font-family: 'snap_itcregular';
+    color: black;
+}
+
+
+/* Hero section Selector */
+#the_hero {
+
+   
+}
+
+
+/* hero image secletor for jumbotron */
+#the_hero .jumbotron {
+
+   background-image: url(../media/images/other/jumbo/jumbo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 700px;
+
+ }
+
+
+/* About section Selector */
+#about {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 15%;
+}
+
+
+#about .row {
+
+    flex-direction: column;
+}
+
+#about_p {
+
+}
+
+#slides img {
+
+    display: none;
+
+}
+
+#a_slide {
+
+    width: 300px;
+    height: 300px;
+    
+}
+
+#about #image_div_about {
+    display: none;
+
+}
+#about .h-50 {
+
+    display: none;
+}
+
+#about .badge {
+
+    display: none;
+    
+}
+
+/* info_on_us section Selector */
+#info_on_us {
+    
+    
+}
+
+/* Products section Selector */
+#products {
+    
+    text-align: center;
+}
+
+#products .row {
+    flex-direction: column;
+}
+
+#products p {
+    text-align: center;
+}
+
+#products button {
+    text-align: center;
+}
+
+
+
+#products_container {
+
+
+}
+
+.buy_button {
+
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    border:1px  solid whitesmoke;
+    padding: 0.5rem;
+    width: 30%;
+    margin-bottom: 4rem;
+
+}
+.arrow {
+    border: solid black;
+
+    border-left-width: 0;
+    border-right-width: 3px;
+    border-top-width: 0;
+    border-bottom-width: 3px;
+
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+  }
+  .right {
+    transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    margin-left: 1rem;
+  }
+  
+.buy_button_num {
+    resize: vertical;
+    width: 50%;
+
+}
+/* newsletter sign up section Selector */
+#news_letter {
+
+}
+
+/* selectors for conect model fourm */
+#contact_form {
+    font-family: 'snap_itcregular';
+
+    text-align: center;
+}
+
+#contact_form span {
+
+    color: red;
+
+}
+
+.modal-header h1 {
+
+    text-align: center;
+
+}
+
+#contact_form input[type=text], select, textarea {
+
+    width: 70%;
+    padding: 1rem;
+    margin-bottom: 7px; 
+    border:1px  solid whitesmoke;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    resize: vertical;
+}
+
+#contact_form input[type=button] {
+
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    border:1px  solid whitesmoke;
+    padding: 0.5rem;
+    margin-right: 3px;
+    width: 18%;
+    margin-top: 0.5rem;
+}
+
+
+#terms {
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    height: 10px;
+    width: 10px;
+    background-color: #eee;
+}
+
+
+/* Email form */
+
+#email_form span {
+
+    color: red;
+
+}
+
+
+#email_form {
+    font-family: 'snap_itcregular';
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+#email_form input[type=text] {
+    width: 30%;
+    padding: 1rem;
+    margin-bottom: 7px; 
+    border:1px  solid whitesmoke;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    resize: vertical;
+
+}
+
+#email_form input[type=button] {
+
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    border:1px  solid whitesmoke;
+    padding: 1rem;
+    margin-right: 3px;
+    width: 18%;
+ }
+
+#email_form label {
+    resize: vertical;
+    display: none;
+
+}
+ hr {
+
+    width: 80%;
+
+ }
+
+ #news_letter h4  {
+
+    width: 100%;
+    margin-bottom: 1rem;
+
+
+ }
+
+
+ /* FAQ style */
+
+ #faq {
+
+    text-align: center;
+    font-family: 'snap_itcregular';
+
+ }
+ #info_on_us {
+
+    margin: 0px;
+
+ }
+
+ #info_on_us {
+
+    margin: 0px;
+
+ }
+
+ #info_on_us h2 {
+
+    margin-bottom: 4px;
+ }
+
+ #info_on_us .jumbotron {
+
+    background-image: url(../media/images/other/jumbo/jumbo5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: center;
+     height: 700px;
+ 
+  }
+
+  
+
+
+
+
+
+  /* footer */
+
+  footer {
+
+    margin: 0px;
+  }
+
+  #social_links {
+
+    margin-bottom: 10px;
+
+  }
+
+/* simple moblie first setup */
+@media only screen and (min-width: 1024px) {
+
+    #a_slide {
+
+        width: 400px;
+        height: 400px;
+
+    }
+  
+}
+
+
+@media only screen and (min-width: 742px) {
+
+    /* Email form css */
+
+    #email_form  h4 {
+        display: none;
+
+
+    }
+
+    #email_form  label {
+        display: inline;
+        margin-right: 7px;
+
+
+    }
+
+    #email_form  input {
+
+        margin: 10px 0;
+
+
+    }
+
+    
+    #email_form {
+
+        flex-direction: column;
+        align-items: stretch;
+
+
+
+    }
+
+    #email_form input[type=button] {
+        width: 10%;
+
+    }
+
+
+    /* Contact form */
+    #contact_form input[type=button] {
+
+   
+        width: 10%;
+       
+    }
+
+    /*about section */
+
+    #about {
+
+        text-align: initial;
+
+    }
+    #about p {
+
+
+
+    }
+
+    #about .row {
+        text-align: initial;
+        flex-direction: row;
+    }
+
+    #about #image_div_about {
+        display: block;
+    
+    }
+
+
+    #about .h-50 {
+
+        display: flex;
+    }
+
+    #about .badge {
+
+        display: inline-block;
+        
+    }
+    /*product section */
+
+
+        #products {
+
+            text-align: initial;
+    
+        }
+        #products p {
+    
+    
+    
+        }
+    
+        #products .row {
+            text-align: initial;
+            flex-direction: row;
+        }
+
+        #products .buy_button {
+
+            width: 50%;
+
+        }
+
+    
+}
+
