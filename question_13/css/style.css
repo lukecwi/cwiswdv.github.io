@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@charset "utf-8";
+
+html, body {
+
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../media/images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    font-family: 'Share Tech Mono', monospace;
+
+
+}
+
+
+#task_list_app {
+
+    background-color: #3B76B8;
+
+}
+
+#techo_power_h1 {
+    margin-bottom: 2rem;
+
+}
+
+
+.a_btn {
+
+    border: 0;
+    background-color: cornsilk;
+    width: 40%;
+    height: 50px;
+    
+
+
+}
+
+.a_btn:active {
+
+    color: black;
+
+}
+
+#display_tasks {
+
+    height: 130px;
+
+}
+#add_task, #clear_task {
+
+    height: 30px;
+    border: 0;
+    margin-top: 1rem;
+
+}
+
+#main_veiw {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    text-align: center;
+
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    top: 98.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media screen and (min-width: 500px) {
+
+    .a_btn {
+
+
+        width: 30%;
+    
+    
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .a_btn {
+
+
+        width: 13%;
+    
+    
+    }
+}

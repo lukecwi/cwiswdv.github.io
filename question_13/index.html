@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Techno Solutions</title>
+    </head>
+    <body>
+
+        <!-- the nav -->
+
+        <header>
+
+            <nav class="navbar navbar-dark bg-dark">
+
+                <a class="navbar-brand" href="index.html">Techno Solutions</a>
+       
+
+            </nav>
+
+        </header>
+        <!-- the main setup -->
+
+        <main>
+
+            <div id="main_veiw">
+
+                <h1 id="techo_power_h1"> Software with power! </h1>
+                <button id="btn_1" class="a_btn" data-toggle="modal" data-target="#task_list_app">Test our work</button>
+                <button id="btb_2" class="a_btn" >Go to site.</button>
+
+            </div>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="bg-dark text-center text-lg-start">
+ 
+            <div>
+                
+                <a style="color: ghostwhite;" href="index.html">Techno Solutions &copy;</a>
+
+            </div>
+
+        </footer>
+        <!-- the modal with task list -->
+        <div class="modal" id="task_list_app">
+            <div class="modal-dialog" >
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                 <span aria-hidden="true">&times;</span>
+                            </button>
+
+                    </div>
+                    <div class="modal-body">
+                        <p style="text-align: center;">Test out our task list app:</p>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div>
+
+                            <input id="input_task" type="text" placeholder="Enter Task">
+                            <span id="error_display" style="color: red;"></span>
+
+                        </div>
+                            <button id="add_task">Add the Task</button>
+                            <button id="clear_task">Clear tasks</button>
+                        </div>
+                        <div class="col-6">
+                                <textarea name="display_tasks" id="display_tasks" placeholder="No tasks today" disabled></textarea>
+
+                        </div>
+                         </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>       
+        <script src="javascript/script.js"></script>
+
+    </body>
+
+</html>
