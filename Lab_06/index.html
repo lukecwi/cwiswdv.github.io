@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Boise rock is home of the best rock Events in idaho">
+        <meta name="keywords" content="music,rock,boise">
+        <meta name="author" content="Luke Chulack">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+
+        <link rel="stylesheet" href="front-end/style/css/style.css">
+
+
+    </head>
+    <body>
+
+<header>
+            <h2 id="brand" ><a href="index.html" > Boise ROCK</a></h2>
+
+            <nav>
+                <ul id="nav-bar">
+
+                    <li class="nav_item">
+
+                        <a href="index.html" class="nav_link">Home</a>
+
+                    </li>
+
+                    <li class="nav_item">
+
+                        <a href="about.html" class="nav_link">About</a>
+
+                    </li>
+
+                    <li class="nav_item">
+                            
+                        <a href="Events.html" class="nav_link">Events</a>
+
+                    </li>
+
+
+                    <li class="nav_item">
+                            
+                        <a href="#ex1"  class="nav_link"  rel="modal:open">Contact</a>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+            <div id="menu_div">
+                <i  id="menu_bars" class="fas fa-bars" data-anijs="if: mouseover, on: #menu_bars, do: pulse animated"></i>
+            </div>
+
+
+
+            <div id="Main_Content" >
+
+                <h1>Rock With Us!</h1>
+
+                <div>
+
+                    <button id="rock_button" data-anijs="if: mouseover, on: #rock_button, do: pulse animated" >Go to an Event</button>
+
+                </div>
+
+            </div>
+         
+      
+
+
+        <footer>
+            <div id="footer_icons">
+                <ul>
+
+                    <li>
+
+                        <a href="https://twitter.com/" target="_blank"><img id="icons_footer_1" src="front-end/media/images/icons/twitter-24px-FFD0D0.png" data-anijs="if: mouseover, on: #icons_footer_1, do: swing animated"></a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="https://www.facebook.com/" target="_blank"><img id="icons_footer_2" src="front-end/media/images/icons/facebook-24px-FFD0D0.png" data-anijs="if: mouseover, on: #icons_footer_2, do: swing animated"></a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="https://www.instagram.com/" target="_blank"><img  id="icons_footer_3" src="front-end/media/images/icons/instagram-24px-FFD0D0.png" data-anijs="if: mouseover, on: #icons_footer_3, do: swing animated"></a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="https://www.spotify.com/" target="_blank"><img id="icons_footer_4" src="front-end/media/images/icons/spotify-24px-FFD0D0.png" data-anijs="if: mouseover, on: #icons_footer_4, do: swing animated"></a>
+
+                    </li>
+
+                </ul>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/fd32684d65.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+        <!-- anijs -->
+        <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+        <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+        <script src="front-end/script/javascript/script.js"></script>
+        
+        <div id="ex1" class="modal" style="    background-color: rgba(98, 12, 12, 0.7);
+        ">
+
+            <a href="#" rel="modal:close"></a>
+            <div style="text-align: center;">
+            <h2>Contact Us</h2>
+
+            <form >
+
+                <div>
+                <input id="name" type="text" placeholder="Name">
+            </div>
+        <div>
+                <input id="email" type="email" placeholder="Email">
+            </div>
+            <div>
+                <textarea id="msg" placeholder="Message"></textarea>
+            </div>
+        <div>
+                <input  id="send" type="submit" value="send">
+            </div>
+
+        </div>
+            </form>
+            
+
+        </div>
+        
+          
+    </body>   
+
+</html>
