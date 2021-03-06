@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/*********************************************************************
+***
+*Original Author: Luke Chulack                         
+*Date Created: 03/05/2021                                     
+*Version: 1.0                                           
+*Date Last Modified: 03/05/2021                               
+*Modified by: Luke Chulack        
+*Modification log:   
+
+    version 1.0 - 03/05/2021 - styles for all 5 sections, "Home", about, events, contact, and cart.media queries for mostly the header and forms. 
+
+
+***
+******************************************************************** */
+@charset "UTF-8";
+
+
+/* main stuff */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}    
+
+
+body {
+    color: rgb(255, 208, 208);
+
+    font-family: 'Rock Salt', cursive;
+}
+
+
+main {
+
+    background-color: #4f110f;
+    background-image: url("../../media/images/back/back4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+#overlay_main {
+
+    background-color: rgba(77, 17, 17, .95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* header and nav  */
+
+header {
+
+    background-image: url("../../media/images/back/back1.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+
+
+}
+
+.overlay {
+
+    background-color: rgba(98, 12, 12, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+   
+}
+
+#icon {
+    color: rgb(255, 208, 208) !important;
+
+
+    
+}
+
+.nav-link {
+
+    color: rgb(255, 208, 208) !important;
+
+
+}
+
+.navbar-toggler {
+
+    border: none !important;
+}
+
+.fa-bars {
+
+    font-size: 30px;
+    color: rgb(255, 208, 208) !important;
+
+}
+.nav-link:hover {
+
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+
+#Main_Content {
+
+    position: relative;
+    top: 30%;
+
+
+}
+
+
+#rock_button {
+
+    margin-top: 1rem;
+    width: 40%;
+    height: 50px;
+    background-color: #4c1010;
+    color: rgb(255, 208, 208);
+    border: none;
+    cursor: pointer;
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+}
+
+
+
+/* about section */
+#about {
+
+}
+
+#h2_about {
+    margin-bottom: 4rem;
+
+}
+
+
+
+#overlay2 img {
+    margin-bottom: 4rem;
+
+}
+
+
+
+
+
+/* events */
+
+#event {
+
+    margin-top: 7rem;
+
+}
+
+#event h3 {
+
+    margin-bottom: 3rem;
+
+}
+
+#event .ticket_buy p {
+
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+
+}
+#ticket_2 {
+
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.ticket_buy {
+
+    margin-bottom: 6rem;
+
+}
+
+.buy_button {
+
+    margin-top: 1rem;
+    width: 40%;
+    height: 50px;
+    background-color: rgb(255, 208, 208);
+    color:  #4c1010;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+
+}
+
+
+/* contact section */
+
+
+#contact_form {
+
+    background:url("../../media/images/back/back4.jpg") cover center rgba(98, 12, 12, 0.7);
+
+}
+
+
+#contact_form .close {
+
+    color: rgb(255, 208, 208);
+    text-align: right !important;
+    margin-right: 0.5rem;
+
+}
+
+#contact_form .modal-content {
+
+    background: rgba(98, 12, 12, 0.7);
+    border: none;
+    background-size: cover;
+    border: none;
+
+
+}
+
+.modal-dialog {
+
+    border: none;
+    position: relative;
+    top: 20%;
+
+}   
+#contact_form h4 {
+
+    margin-bottom: 2rem;
+
+}
+
+#name_contact, #email_contact {
+
+    width: 100%;
+    height: 50px;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 208, 208);
+
+}
+
+#msg {
+
+
+    width: 100% !important;
+    height: 130px;
+    margin-bottom: 1rem;
+    background-color: rgb(255, 208, 208);
+    resize: none;
+
+}
+
+#send {
+
+    width: 50%;
+    height: 50px;
+    background-color: rgb(255, 208, 208);
+    color:  #4c1010;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+
+}
+
+/* cart */
+
+#modal_shop {
+
+    color: #757575 !important;
+}
+
+#go_for_shop {
+
+    color: red !important;
+    font-size: 35px;
+    margin-top: 1rem;
+
+    margin-right: 2rem;
+
+}
+
+#send-cart {
+
+    width: 50%;
+    height: 50px;
+    background-color: #4c1010;
+    color: rgb(255, 208, 208);
+    border: none;
+    cursor: pointer;
+    font-family: 'Rock Salt', cursive;
+    font-size: 12px;
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    user-select: none;
+  }
+
+
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  
+
+/* footer  */
+footer {
+
+    background-image: url("../../media/images/back/back4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+
+#overlay3 {
+
+    background-color: rgba(77, 17, 17, .95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* other */
+
+.arrow {
+    border: solid rgb(255, 208, 208);
+
+    border-left-width: 0;
+    border-right-width: 3px;
+    border-top-width: 0;
+    border-bottom-width: 3px;
+
+    display: inline-block;
+    padding: 3px;
+    cursor: pointer;
+  }
+  .right {
+    transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
+    margin-left: 1rem;
+  }
+  
+  .back3 {
+
+    background-image: url("../../media/images/back/3.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+
+}
+
+/* mobile first setup  */
+
+
+@media screen and (min-width: 550px) {
+
+    /* navbar */
+  
+
+    /* body */
+
+    #rock_button {
+
+        width: 30%;
+
+    }
+
+    #Main_Content {
+        top: 40%;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    /* navbar */
+    #menu_bars{
+
+        display: none;
+
+    }
+
+    .nav_item {
+        display: inline;
+
+    }
+
+    #name, #email, #msg {
+
+        width: 50%;
+    
+    }
+
+    
+
+    /* body */
+
+    #rock_button {
+
+        width: 15%;
+
+    }
+
+}
+
